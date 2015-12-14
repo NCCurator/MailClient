@@ -6,5 +6,5 @@ package edu.netcracker.core.entities;
  * Date: 14.12.2015
  */
 public enum Gender {
-    MALE, FEMALE
+    MAN, WOMAN, NOT_SPECIFIED
 }
