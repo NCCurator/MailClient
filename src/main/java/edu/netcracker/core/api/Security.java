@@ -1,29 +1,41 @@
 package edu.netcracker.core.api;
 
 /**
- * Date 14.12.2015.
- * This interface is for managing security question and answer
+ * This interface is for managing security question and answer TODO интерфейс содержит методы для получения или изменения
+ * контрольного вопроса пользователя при востановлении пароля от учетной записи
+ *
  * @author Miroshnichenko Yuriy
+ *         Date 14.12.2015.
  */
+public interface Security {
 
-public interface Security  {
+    // TODO метод getId
+
     /**
+     * TODO пояснение, что делает метод
+     *
      * @return answer for security question
      */
-    public String getAnswer();
+    String getAnswer();
 
     /**
+     * TODO пояснение, что делает метод
+     *
      * @return question for security answer
      */
-    public String getQuestion();
+    String getQuestion();
 
     /**
-     * @param answer Sets answer for security question
+     * TODO пояснение, что делает метод
+     *
+     * @param answer Sets answer for security question TODO описание аргумента метода
      */
-    public void setAnswer(String answer);
+    void setAnswer(String answer);
 
     /**
-     * @param question Sets question for security answer
+     * TODO пояснение, что делает метод
+     *
+     * @param question Sets question for security answer TODO описание аргумента метода
      */
-    public void setQuestion(String question);
+    void setQuestion(String question);
 }

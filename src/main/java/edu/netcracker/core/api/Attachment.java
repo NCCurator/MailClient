@@ -1,36 +1,55 @@
 package edu.netcracker.core.api;
 
 /**
- * Date 14.12.2015.
- * This class is for managing attachment
+ * This class is for managing attachment TODO Данный интерфейс содержит методы для получения или изменения конкретного
+ * поля файла прикрепленного к письму
+ *
  * @author Miroshnichenko Yuriy
+ *         Date 14.12.2015.
  */
 public interface Attachment {
-    /**
-     * @return Attachment stored in byte[]
-     */
-    public byte[] getFile();
+
+    // TODO описание метода getId()
 
     /**
-     * @return name of the Attachment
+     * TODO что делает метод
+     *
+     * @return Attachment stored in byte[] TODO байтовое представление файла прикрепленного к письму
      */
-    public String getName();
+    byte[] getFile();
 
     /**
-     * @return size of the Attachment
+     * TODO что делает метод
+     *
+     * @return name of the Attachment TODO название файла прикрепленного к пиьсму
      */
-    public int getSize();
+    String getName();
 
     /**
-     * @param file Sets Attachment stored in byte[]
+     * TODO что делает метод
+     *
+     * @return size of the Attachment TODO размер файла прикрепленного к письму
      */
-    public void setFile(byte[] file);
+    int getSize();
+
     /**
-     * @param name Sets name of the Attachment
+     * TODO что делает метод
+     *
+     * @param file Sets Attachment stored in byte[] TODO байтовое представление файла прикрепленного к письму
      */
-    public void setName(String name);
+    void setFile(byte[] file);
+
     /**
-     * @param size Sets size of the Attachment
+     * TODO что делает метод
+     *
+     * @param name Sets name of the Attachment TODO название файла прикрепленного к пиьсму
      */
-    public void setSize(int size);
+    void setName(String name);
+
+    /**
+     * TODO что делает метод
+     *
+     * @param size Sets size of the Attachment TODO размер файла прикрепленного к письму
+     */
+    void setSize(int size);
 }

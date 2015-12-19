@@ -3,16 +3,19 @@ package edu.netcracker.core.utils;
 import java.util.UUID;
 
 /**
- * Util-class for generation entity's ID
+ * The class contains a utility method for generating a unique identifier for entities of the application
+ *
  * @author Zubenko Eugene
- * Date: 14.12.2015
+ *         Date: 14.12.2015
  */
 public class GeneratorIdUtil {
-    protected GeneratorIdUtil() {}
+
+    private GeneratorIdUtil() {}
 
     /**
-     * Generates random ID
-     * @return string representation of ID
+     * The method is intended to generate unique identifiers of the entity
+     *
+     * @return string unique identifier
      */
     public static String generateID() {
         return UUID.randomUUID().toString();

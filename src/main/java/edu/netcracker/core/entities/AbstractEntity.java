@@ -4,25 +4,25 @@ import edu.netcracker.core.utils.GeneratorIdUtil;
 
 /**
  * Abstract class for representation any entity
+ *
  * @author Zubenko Eugene
- * Date: 14.12.2015
+ *         Date: 14.12.2015
  */
 public abstract class AbstractEntity {
+
     /**
-     * Entity ID
+     * Unique identifier of the entity
      */
     private String id;
 
-    /**
-     * Default constructor
-     */
     public AbstractEntity() {
         this.id = GeneratorIdUtil.generateID();
     }
 
     /**
-     * Gets entity ID
-     * @return entity ID
+     * Method returns the unique identifier of the entity
+     *
+     * @return unique identifier of the entity
      */
     public String getId() {
         return id;

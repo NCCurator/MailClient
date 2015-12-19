@@ -1,17 +1,26 @@
 package edu.netcracker.core.entities;
 
+import edu.netcracker.core.api.Account;
+import edu.netcracker.core.api.Gender;
+import edu.netcracker.core.api.User;
+
 import java.util.Date;
+import java.util.Map;
 
 /**
- * Class which represents user's entity.
+ * Class which represents user's entity. TODO класс содержит поля содержащие информацию об учетной записи пользователя,
+ * а так же методы для получения и измменения этой информации
+ *
  * @author Zubenko Eugene
- * Date: 14.12.2015
+ *         Date: 14.12.2015
  */
-public class User extends AbstractEntity {
+public class UserEntity extends AbstractEntity implements User {
+
     /**
      * Map of user's mail-accounts and their names
      */
     private Map<String, Account> accounts;
+
     /**
      * Date of user's birthday
      */
@@ -25,23 +34,23 @@ public class User extends AbstractEntity {
      */
     private String country;
     /**
-     * User's first name
+     * User first name
      */
     private String firstName;
     /**
-     * User's last name
+     * User last name
      */
     private String lastName;
     /**
-     * User's gender
+     * User gender
      */
     private Gender gender;
     /**
-     * User's login
+     * User login
      */
     private String login;
     /**
-     * User's password
+     * User password
      */
     private String password;
     /**
@@ -49,103 +58,124 @@ public class User extends AbstractEntity {
      */
     private byte[] photo;
     /**
-     * User's phone number
+     * User phone number
      */
     private String numberPhone;
 
     /**
-     * Call superclass' constructor
+     * Call superclass' constructor TODO дописать передачу параметров в конструктор
      */
-    public User() {
+    public UserEntity() {
         super();
     }
 
-    public void setAccounts(Map<String, Accounts> accounts) {
+    @Override
+    public void setAccounts(Map<String, Account> accounts) {
         this.accounts = accounts;
     }
 
-    public Map<String, Accounts> getAccounts() {
-        return this.accounts;
+    @Override
+    public Map<String, Account> getAccounts() {
+        return accounts;
     }
 
+    @Override
     public void setBirthDay(Date date) {
         this.birthDay = date;
     }
 
+    @Override
     public Date getBirthDay() {
-        return this.birthDay;
+        return birthDay;
     }
 
+    @Override
     public void setCity(String city) {
         this.city = city;
     }
 
+    @Override
     public String getCity() {
-        return this.city;
+        return city;
     }
 
+    @Override
     public void setCountry(String country) {
         this.country = country;
     }
 
+    @Override
     public String getCountry() {
-        return this.country;
+        return country;
     }
 
+    @Override
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    @Override
     public String getFirstName() {
-        return this.firstName;
+        return firstName;
     }
 
+    @Override
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    @Override
     public String getLastName() {
-        return this.lastName;
+        return lastName;
     }
 
+    @Override
     public void setGender(Gender gender) {
         this.gender = gender;
     }
 
+    @Override
     public Gender getGender() {
-        return this.gender;
+        return gender;
     }
 
+    @Override
     public void setLogin(String login) {
         this.login = login;
     }
 
+    @Override
     public String getLogin() {
-        return this.login;
+        return login;
     }
 
+    @Override
     public void setPassword(String password) {
         this.password = password;
     }
 
+    @Override
     public String getPassword() {
-        return this.password;
+        return password;
     }
 
+    @Override
     public void setNumberPhone(String numberPhone) {
         this.numberPhone = numberPhone;
     }
 
+    @Override
     public String getNumberPhone() {
-        return this.numberPhone;
+        return numberPhone;
     }
 
+    @Override
     public void setPhoto(byte[] photo) {
-        this.photo = photo.clone();
+        this.photo = photo;
     }
 
+    @Override
     public byte[] getPhoto() {
-        return this.photo.clone();
+        return photo.clone();
     }
-
 }

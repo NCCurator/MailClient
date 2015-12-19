@@ -1,143 +1,192 @@
 package edu.netcracker.core.api;
 
 import java.util.Date;
+import java.util.Map;
 
 /**
- * Interface which represents user's entity.
+ * Interface which represents user's entity. TODO Данный интерфейс содержит методы для получения или изменения конкретного
+ * поля учетной записи пользователя
+ *
  * @author Zubenko Eugene
- * Date: 14.12.2015
+ *         Date: 14.12.2015
  */
 public interface User {
+
+    // TODO метод getId
+
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets map of user's mail-accounts and their names
+     *
      * @param accounts accounts' map
      */
-    public void setAccounts(Map<String, Accounts> accounts);
+    void setAccounts(Map<String, Account> accounts);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets map of user's mail-accounts and their names
+     *
      * @return map of user's mail-accounts and their names
      */
-    public Map<String, Accounts> getAccounts();
+    Map<String, Account> getAccounts();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets date of user's birthday
+     *
      * @param date birthday date
      */
-    public void setBirthDay(Date date);
+    void setBirthDay(Date date);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets date of user's birthday
+     *
      * @return date of user's birthday
      */
-    public Date getBirthDay();
+    Date getBirthDay();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's city name
+     *
      * @param city city name
      */
-    public void setCity(String city);
+    void setCity(String city);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's city name
+     *
      * @return name of city where the user lives
      */
-    public String getCity();
+    String getCity();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's country name
+     *
      * @param country country name
      */
-    public void setCountry(String country);
+    void setCountry(String country);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's country name
+     *
      * @return name of country where the user lives
      */
-    public String getCountry();
+    String getCountry();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's first name
+     *
      * @param firstName first name
      */
-    public void setFirstName(String firstName);
+    void setFirstName(String firstName);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's first name
+     *
      * @return user's first name
      */
-    public String getFirstName();
+    String getFirstName();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's last name
+     *
      * @param lastName last name
      */
-    public void setLastName(String lastName);
+    void setLastName(String lastName);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's last name
+     *
      * @return user's last name
      */
-    public String getLastName();
+    String getLastName();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's gender
+     *
      * @param gender gender
      */
-    public void setGender(Gender gender);
+    void setGender(Gender gender);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's gender
+     *
      * @return user's gender
      */
-    public Gender getGender();
+    Gender getGender();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's login
+     *
      * @param login login
      */
-    public void setLogin(String login);
+    void setLogin(String login);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's login
+     *
      * @return user's login
      */
-    public String getLogin();
+    String getLogin();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's password
+     *
      * @param password password
      */
-    public void setPassword(String password);
+    void setPassword(String password);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's password
+     *
      * @return user's password
      */
-    public String getPassword();
+    String getPassword();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's phone number
+     *
      * @param numberPhone phone number
      */
-    public void setNumberPhone(String numberPhone);
+    void setNumberPhone(String numberPhone);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's phone number
+     *
      * @return user's phone number
      */
-    public String getNumberPhone();
+    String getNumberPhone();
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Sets user's picture
+     *
      * @param photo byte representation of picture
      */
-    public void setPhoto(byte[] photo);
+    void setPhoto(byte[] photo);
 
     /**
+     * TODO посмотреть пример javaDoc из письма и исправить
      * Gets user's picture
+     *
      * @return byte representation of user picture
      */
-    public byte[] getPhoto();
-
+    byte[] getPhoto();
 }
